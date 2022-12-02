@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+    <head>
+<meta charset="UTF-8">
+<title>Фотогалерея</title>
+<!-- Нормализуем стили -->
+ <link rel="stylesheet" 
+href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+ <!-- Подключаем собственные стили -->
+ <link rel="stylesheet" href="main.css">
+<!-- Отображаем фавикон -->
+ <link rel="shortcut icon" type="img/%D1%8F%20%D0%BC%D0%BE%D1%82%D0%BE.jpg" 
+href="img/%D1%8F%20%D0%BC%D0%BE%D1%82%D0%BE.jpg">
+ <!-- Подключаем шрифты -->
+ <link 
+href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" 
+rel="stylesheet">
+<style>
+        menu {
+    background: rgb(70,16,87);
+background: linear-gradient(50deg, rgba(70,16,87,1) 42%, rgba(37,23,37,1) 69%);;
+    margin: 0;
+    padding: 0;
+    
+}
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #FFF;
+}
+
+}
+        </style>
+</head>
+
+
+    <body>
+       
+   
+
+ 
+<h1 style="margin: 20px;">Фотография- пойманный момент танца, <br>
+   движения в нём, чувств и эмоций, <br>
+   появляющихся как отклик на музыку и <br>
+   взаимодействие с партнёром.</h1>
+    
+<!-- Контейнер слайдшоу -->
+<div class="slideshow-container">
+<!-- Блок полноразмерных картинок с номерами и текстом -->
+ <div class="mySlides fade">
+ <div class="numbertext"></div>
+ <img src="img/%D0%B4%D0%B8%D1%81%D0%BA%D0%BE%20%D0%92%D0%B0%D0%BD%D1%8F.jpg" style="width: 100%">
+ <div class="text"></div>
+ </div>
+ <div class="mySlides fade">
+ <div class="numbertext"></div>
+ <img src="img/%D0%B4%D0%B8%D1%81%D0%BA%D0%BE%20%D0%9B%D1%91%D1%88%D0%B0.jpg" style="width: 100%">
+ <div class="text"></div>
+ </div>
+ <div class="mySlides fade">
+ <div class="numbertext"></div>
+ <img src="Img/%D0%B4%D0%B8%D1%81%D0%BA%D0%BE%20%D0%9C%D0%B8%D1%88%D0%B0.jpg" style="width: 100%">
+ <div class="text"></div>
+ </div>
+ <div class="mySlides fade">
+ <div class="numbertext"></div>
+ <img src="Img/%D0%BC%D0%B5%D0%BC%20%D0%B8%D0%B4%D0%B5%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%BF%D0%B0%D1%80%D1%82%D0%BD%D1%91%D1%80.jpg" style="width: 100%">
+ <div class="text"></div>
+ </div>
+ <div class="mySlides fade">
+ <div class="numbertext"></div>
+ <img src="img/%D0%97%D0%B0%D1%82%D0%B5%D1%80%D1%8F%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B2.jpg" style="width: 100%">
+ <div class="text"></div>
+ </div> 
+  <div class="mySlides fade">
+ <div class="numbertext"></div>
+ <img src="img/%D1%8F%20%D0%BC%D0%B0%D1%81%D0%BA%D0%B0.jpg" style="width: 100%">
+ <div class="text"></div>
+ </div>
+ <div class="mySlides fade">
+ <div class="numbertext"></div>
+ <img src="img/%D1%8F%20%D0%BC%D0%BE%D1%82%D0%BE.jpg" style="width: 100%">
+ <div class="text"></div>
+ </div>
+  <div class="mySlides fade">
+ <div class="numbertext"></div>
+ <img src="img/%D1%8F%20%D1%82%D0%B0%D0%BD%D0%B3%D0%BE.jpg" style="width: 100%">
+ <div class="text"></div>
+ </div>
+ </div>
+ 
+
+<br>
+<!-- точки/круги -->
+<div style="text-align:center">
+ <span class="dot" onclick="currentSlide(1)"></span>
+ <span class="dot" onclick="currentSlide(2)"></span>
+ <span class="dot" onclick="currentSlide(3)"></span>
+ <span class="dot" onclick="currentSlide(4)"></span>
+ <span class="dot" onclick="currentSlide(5)"></span>
+ <span class="dot" onclick="currentSlide(6)"></span>
+ <span class="dot" onclick="currentSlide(7)"></span>
+ <span class="dot" onclick="currentSlide(8)"></span>
+
+ 
+</div>
+<!-- Кнопка назад -->
+<div class="pf_sp" style="font-size: 20px;">
+ <a href="index.html" class="button_back">&larr; Назад</a>
+ </div>
+   
+   <footer style="margin-top: 50px; text-align: center; color:#e7bbe7; font-size: 20px; font-family:monospace">
+       <h3>Проектная работа Репетуновой А.А.</h3>
+           <p>Сайт-портфолио "Моё хобби - <br>танцы и всё, всё, всё".
+               
+           </p>
+       
+   </footer>
+   
+    </body>
+    
+    <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+ 
+<!-- управление вперед/назад -->
+function plusSlides(n) {
+ showSlides(slideIndex += n);
+}
+<!-- контроль картинок --> 
+function currentSlide(n) {
+ showSlides(slideIndex = n);
+}
+function showSlides(n) {
+ var i;
+ var slides = document.getElementsByClassName("mySlides");
+ var dots = document.getElementsByClassName("dot");
+ if (n > slides.length) {slideIndex = 1}
+ if (n < 1) {slideIndex = slides.length}
+ for (i = 0; i < slides.length; i++) {
+ slides[i].style.display = "none";
+ }
+ for (i = 0; i < dots.length; i++) {
+ dots[i].className = dots[i].className.replace(" active", "");
+ }
+ slides[slideIndex-1].style.display = "block";
+ dots[slideIndex-1].className += " active";
+} 
+</script>
+
+<script>
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+ var i;
+ var slides = document.getElementsByClassName("mySlides");
+ for (i = 0; i < slides.length; i++) {
+ slides[i].style.display = "none";
+ }
+ slideIndex++;
+ if (slideIndex > slides.length) {slideIndex = 1}
+ slides[slideIndex-1].style.display = "block";
+ setTimeout(showSlides, 5000); // менять кадры кадые 2 секунды
+}
+    
+    
+</script>
+</html>

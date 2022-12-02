@@ -1,0 +1,66 @@
+/*Подключение шрифтов*/
+@import url('https://fonts.googleapis.com/css2? family= Montserrat:wght@400;500;700 & family= Pacifico & display=swap');
+
+
+header{
+background: rgb(70,16,87);
+background: linear-gradient(50deg, rgba(70,16,87,1) 42%, rgba(37,23,37,1) 69%);
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+body {
+    background: rgb(70,16,87);
+background: linear-gradient(50deg, rgba(70,16,87,1) 42%, rgba(37,23,37,1) 69%);
+}
+h1{
+    font-size: 50px;
+    font-family: 'Montserrat', без засечек;
+    color: #FFF;
+    text-align: center;
+}
+h2 {
+    font-size: 30px;
+    font-family: «Pacifico», курсив;
+    color: #FFF;
+}
+
+h3 {
+    font-size: 30px;
+    font-family: «Pacifico», курсив;
+    color: #FFF;
+}
+h4 {
+    font-size: 30px;
+    font-family: «Pacifico», курсив;
+    color: #FFF;
+}
+h5 {
+    font-size: 30px;
+    font-family: «Pacifico», курсив;
+    color: #FFF;
+}
+
+menu {
+   background: rgb(112,35,112);
+background: linear-gradient(50deg, rgba(112,35,112,1) 17%, rgba(55,27,59,1) 42%);
+    margin: 0;
+    padding: 20px;
+    
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #c77ac7;
+
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #c77ac7;
+}
+
+.nav-item {
+    border: 1px solid #c77ac7;
+    border-radius: 5px;
+    margin: 10px;
+}
+.nav-item:hover {
+    background-color: #c77ac7;
+}
+
